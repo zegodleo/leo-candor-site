@@ -265,6 +265,14 @@
     .value-card .vletter { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 30px; color: var(--cyan); line-height: 1; margin-bottom: 14px; }
     .value-card h3 { font-size: 19px; font-weight: 600; margin-bottom: 8px; color: var(--ink); }
     .value-card p { font-size: 14px; line-height: 1.65; color: var(--ink-soft); }
+    .vs-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 12px; }
+    .vs-table { width: 100%; border-collapse: collapse; min-width: 560px; }
+    .vs-table th, .vs-table td { padding: 14px 16px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); font-size: 14px; line-height: 1.5; }
+    .vs-table thead th { font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); }
+    .vs-table thead th:last-child { color: var(--cyan); }
+    .vs-table td:first-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .vs-table td:nth-child(2) { color: var(--ink-dim); }
+    .vs-table td:last-child, .vs-table th:last-child { color: var(--ink); background: rgba(0,212,255,0.05); }
 
     @media (max-width: 900px) {
       nav { padding: 14px 20px; }
@@ -437,6 +445,24 @@
       <div class="value-card"><div class="vletter">08</div><h3>Credit access</h3><p>As traders ourselves, we know how to secure credit lines for your company — improving your cash flow.</p></div>
       <div class="value-card"><div class="vletter">09</div><h3>Kickback-proof buying</h3><p>Outsourcing removes your in-house buyer's opportunity to take supplier kickbacks. We earn nothing from suppliers — so there's nothing to hide.</p></div>
     </div>
+    <div class="kicker" style="margin-top:52px;">Head to Head</div>
+    <div class="vs-wrap">
+      <table class="vs-table">
+        <thead>
+          <tr><th></th><th>Your in-house buyer</th><th>Leo Candor — ex-trader</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Price</td><td>Sees the trader's quote — markup baked in, invisible</td><td>Knows the nett price beneath it; shows it to you</td></tr>
+          <tr><td>Network</td><td>A customer of the trader network</td><td>Inside it — quoted as an insider, not retail</td></tr>
+          <tr><td>Suppliers</td><td>Judges by spec sheet &amp; reputation</td><td>Knows who actually performs at each port</td></tr>
+          <tr><td>Credit</td><td>Negotiates as a small counterparty</td><td>Secures credit lines like a trader</td></tr>
+          <tr><td>Ports &amp; timing</td><td>Reacts to congestion &amp; disruptions</td><td>Sees them coming; books you earlier or later</td></tr>
+          <tr><td>Disputes</td><td>Gets stonewalled</td><td>Knows how claims settle; recovers the money</td></tr>
+          <tr><td>Integrity</td><td>Could be taking the markup as a kickback</td><td>Earns $0 from suppliers — fully open-book</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="values-lead" style="margin-top:44px;margin-bottom:0;text-align:center;">A buyer can't beat a trader — the trader sees what the buyer can't. <span class="accent">So we put a trader on your side of the table.</span></p>
   </section>
 
   <section class="trust">
