@@ -47,7 +47,10 @@
     .mono { font-family: 'JetBrains Mono', monospace; }
 
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; background: rgba(6, 26, 36, 0.85); backdrop-filter: blur(14px); border-bottom: 1px solid var(--rule); }
-    .logo { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); }
+    .logo { display: flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); }
+    .logo-text { display: flex; flex-direction: column; gap: 3px; }
+    .logo-text .brand { font-size: 16px; font-weight: 700; line-height: 1; }
+    .logo-text .strap { font-size: 9px; font-weight: 400; letter-spacing: 0; color: var(--ink-soft); line-height: 1.35; max-width: 300px; }
     .logo-mark { width: 64px; height: 64px; background: var(--bg-card); border: 1px solid var(--rule); border-radius: 14px; display: grid; place-items: center; }
     .logo-mark svg { width: 40px; height: 40px; display: block; }
     .nav-links { display: flex; gap: 28px; list-style: none; }
@@ -58,7 +61,7 @@
     .nav-toggle { display: none; background: none; border: none; color: var(--cyan); cursor: pointer; font-size: 24px; }
 
     /* HERO */
-    .hero { min-height: 100vh; padding: 140px 40px 80px; position: relative; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
+    .hero { min-height: auto; padding: 150px 40px 96px; position: relative; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
     .grid-overlay { position: absolute; inset: 0; background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 80px 80px; pointer-events: none; mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 30%, transparent 80%); }
     .hero-content { position: relative; max-width: 1200px; margin: 0 auto; width: 100%; }
     .pill { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 500; padding: 8px 16px; border-radius: 100px; background: rgba(0, 212, 255, 0.1); border: 1px solid var(--rule); color: var(--cyan); margin-bottom: 28px; }
@@ -276,6 +279,7 @@
 
     @media (max-width: 900px) {
       nav { padding: 14px 20px; }
+      .logo-text .strap { display: none; }
       .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); flex-direction: column; gap: 0; padding: 12px 0; border-bottom: 1px solid var(--rule); }
       .nav-links.open { display: flex; }
       .nav-links a { display: block; padding: 14px 20px; }
@@ -341,10 +345,10 @@
   <nav>
     <div class="logo">
       <div class="logo-mark"><svg viewBox="0 0 64 64" aria-label="Leo Candor"><path d="M46 20 A19 19 0 1 0 46 44" fill="none" stroke="#00D4FF" stroke-width="7" stroke-linecap="round"/><path d="M27 21 L27 43 L41 43" fill="none" stroke="#E8F4F8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <span>Leo Candor</span>
+      <div class="logo-text"><span class="brand">Leo Candor</span><span class="strap">A buyer can't beat a trader — the trader sees what the buyer can't. So we put a trader on your side of the table.</span></div>
     </div>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#edge">Your edge</a></li>
+      <li><a href="#edge">Our edge</a></li>
       <li><a href="#problem">Problem</a></li>
       <li><a href="#fees">Fees</a></li>
       <li><a href="#values">Values</a></li>
@@ -372,7 +376,7 @@
   </section>
 
   <section id="edge">
-    <div class="kicker">Your Edge</div>
+    <div class="kicker">Our Edge</div>
     <h2>What a trader on your side <span class="accent">actually gives you.</span></h2>
     <p class="values-lead">Your buyer sees the quote. <span class="accent">We know the price underneath it.</span> That gap is where the market makes its money — now it makes yours. We traded bunkers for years; now that knowledge works for you.</p>
     <div class="values-grid">
