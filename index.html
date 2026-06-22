@@ -338,7 +338,7 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="#problem">Problem</a></li>
       <li><a href="#how">How</a></li>
-      <li><a href="#savings">Savings</a></li>
+      <li><a href="#edge">Your edge</a></li>
       <li><a href="#fees">Fees</a></li>
       <li><a href="#values">Values</a></li>
       <li><a href="#faq">FAQ</a></li>
@@ -354,7 +354,7 @@
     <div class="hero-content">
       <span class="pill"><span class="dot"></span> Independent · 100% Open-Book</span>
       <h1>The price the market<br /><span class="accent">won't show you.</span></h1>
-      <p class="hero-sub">A team of bunker market professionals — working for you, never the supplier. Full transparency, zero hidden margins, real savings visible every month.</p>
+      <p class="hero-sub">We're traders, not brokers — working for you, never the supplier. You get the inside view on price, ports and quality, with every supplier invoice shared and zero hidden margins.</p>
       <div class="hero-actions">
         <a href="https://wa.me/65XXXXXXXX?text=Hi%20Leo%20Candor%2C%20I%27d%20like%20to%20discuss%20bunker%20procurement" target="_blank" rel="noopener" class="btn-primary">Chat on WhatsApp →</a>
         <a href="#how" class="btn-ghost">How it works</a>
@@ -422,186 +422,20 @@
     <div class="fees-note"><strong>Zero hidden revenue.</strong> No spread. No markup. No supplier commission. No volume rebate from suppliers. Our only revenue is what's listed above — invoiced separately from your fuel cost.</div>
   </section>
 
-  <section id="savings">
-    <div class="kicker">The Savings</div>
-    <h2>The numbers, <span class="accent">visualised.</span></h2>
-    <p class="section-sub">A typical client beats the market by $8–$15 per metric tonne. Across a year of stems that is real money — usually 2–4× our entire fee, including the cost of an in-house buyer you no longer need to hire. Punch in your fleet below and see for yourself.</p>
-
-    <div class="savings-hero">
-      <div class="savings-stat">
-        <div class="v">$8 – $15<span class="unit">/MT</span></div>
-        <div class="l">Typical savings vs market avg</div>
-      </div>
-      <div class="savings-stat">
-        <div class="v">2 – 4<span class="unit">×</span></div>
-        <div class="l">Total benefit vs our fee, annualised</div>
-      </div>
-      <div class="savings-stat">
-        <div class="v">&lt; 2<span class="unit">months</span></div>
-        <div class="l">Typical payback period</div>
-      </div>
-    </div>
-
-    <div class="savings-grid">
-      <!-- LEFT: Bar chart - You paid vs Market avg over 6 months -->
-      <div class="chart-card">
-        <h3>Sample 6-month track record</h3>
-        <div class="chart-sub">VLSFO at Singapore, per-MT delivered (illustrative)</div>
-        <div class="chart-legend">
-          <span><span class="swatch" style="background:linear-gradient(90deg,var(--cyan),var(--cyan-soft))"></span>You paid (Leo Candor)</span>
-          <span><span class="swatch" style="background:#FFB547"></span>Market average</span>
-        </div>
-        <svg class="chart-svg" viewBox="0 0 600 240" preserveAspectRatio="xMidYMid meet" aria-label="Bar chart comparing what client paid vs market average over 6 months">
-          <!-- Grid lines -->
-          <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
-            <line x1="40" y1="20" x2="590" y2="20" />
-            <line x1="40" y1="70" x2="590" y2="70" />
-            <line x1="40" y1="120" x2="590" y2="120" />
-            <line x1="40" y1="170" x2="590" y2="170" />
-            <line x1="40" y1="210" x2="590" y2="210" />
-          </g>
-          <!-- Y-axis labels (price range 530-590) -->
-          <g fill="#5A7480" font-family="JetBrains Mono, monospace" font-size="10">
-            <text x="34" y="24" text-anchor="end">$590</text>
-            <text x="34" y="74" text-anchor="end">$575</text>
-            <text x="34" y="124" text-anchor="end">$560</text>
-            <text x="34" y="174" text-anchor="end">$545</text>
-            <text x="34" y="214" text-anchor="end">$530</text>
-          </g>
-
-          <!-- Bars. 6 months, 2 bars per group (cyan = you, amber = market). x scale: 40..590 = 550. each group ~88px, bar ~26px -->
-          <!-- month labels at bottom -->
-          <g fill="#8FA9B5" font-family="Inter, sans-serif" font-size="11">
-            <text x="86"  y="228" text-anchor="middle">Jan</text>
-            <text x="174" y="228" text-anchor="middle">Feb</text>
-            <text x="262" y="228" text-anchor="middle">Mar</text>
-            <text x="350" y="228" text-anchor="middle">Apr</text>
-            <text x="438" y="228" text-anchor="middle">May</text>
-            <text x="526" y="228" text-anchor="middle">Jun</text>
-          </g>
-
-          <!-- Data: pairs of (you, market) prices. baseline 210 = $530, top 20 = $590. scale: (590-price) / 60 * 190 + 20 -->
-          <!-- Jan: you 560, market 575 -->
-          <g>
-            <rect x="64"  y="110" width="22" height="100" fill="url(#cyanGrad)" rx="2" />
-            <rect x="88"  y="60"  width="22" height="150" fill="#FFB547" rx="2" opacity="0.85" />
-          </g>
-          <!-- Feb: you 552, market 568 -->
-          <g>
-            <rect x="152" y="127" width="22" height="83"  fill="url(#cyanGrad)" rx="2" />
-            <rect x="176" y="77"  width="22" height="133" fill="#FFB547" rx="2" opacity="0.85" />
-          </g>
-          <!-- Mar: you 568, market 580 -->
-          <g>
-            <rect x="240" y="90"  width="22" height="120" fill="url(#cyanGrad)" rx="2" />
-            <rect x="264" y="50"  width="22" height="160" fill="#FFB547" rx="2" opacity="0.85" />
-          </g>
-          <!-- Apr: you 545, market 562 -->
-          <g>
-            <rect x="328" y="143" width="22" height="67"  fill="url(#cyanGrad)" rx="2" />
-            <rect x="352" y="90"  width="22" height="120" fill="#FFB547" rx="2" opacity="0.85" />
-          </g>
-          <!-- May: you 555, market 570 -->
-          <g>
-            <rect x="416" y="113" width="22" height="97"  fill="url(#cyanGrad)" rx="2" />
-            <rect x="440" y="63"  width="22" height="147" fill="#FFB547" rx="2" opacity="0.85" />
-          </g>
-          <!-- Jun: you 540, market 558 -->
-          <g>
-            <rect x="504" y="158" width="22" height="52"  fill="url(#cyanGrad)" rx="2" />
-            <rect x="528" y="100" width="22" height="110" fill="#FFB547" rx="2" opacity="0.85" />
-          </g>
-
-          <defs>
-            <linearGradient id="cyanGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#6EE2F5" />
-              <stop offset="100%" stop-color="#00D4FF" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <div class="chart-saved">
-          <span class="k">Avg saved vs market</span>
-          <span class="v">$14.50 / MT</span>
-        </div>
-      </div>
-
-      <!-- RIGHT: Value stack - where savings come from -->
-      <div class="chart-card value-stack">
-        <h3>Where the savings come from</h3>
-        <div class="chart-sub">Composition of typical monthly savings</div>
-        <div class="vs-row">
-          <div class="vs-label"><span class="vs-name">Better quote (real market price)</span><span class="vs-val">~65%</span></div>
-          <div class="vs-bar"><div class="vs-fill" style="width:65%"></div></div>
-        </div>
-        <div class="vs-row">
-          <div class="vs-label"><span class="vs-name">Lower barging negotiated</span><span class="vs-val">~20%</span></div>
-          <div class="vs-bar"><div class="vs-fill" style="width:20%"></div></div>
-        </div>
-        <div class="vs-row">
-          <div class="vs-label"><span class="vs-name">Claims recovered (short delivery / quality)</span><span class="vs-val">~10%</span></div>
-          <div class="vs-bar"><div class="vs-fill" style="width:10%"></div></div>
-        </div>
-        <div class="vs-row">
-          <div class="vs-label"><span class="vs-name">Credit terms / cash-flow benefit</span><span class="vs-val">~5%</span></div>
-          <div class="vs-bar"><div class="vs-fill" style="width:5%"></div></div>
-        </div>
-        <p class="vs-note">Most of the saving comes from one structural advantage: we know what the real market price is, and we get you that price. Everything else compounds on top.</p>
-      </div>
-    </div>
-
-    <!-- ROI CALCULATOR -->
-    <div class="calc-card">
-      <h3>Estimate your annual benefit</h3>
-      <p class="calc-sub">Two value drivers: fuel savings + in-house buyer cost avoided. Move the sliders, math updates live. No personal data collected.</p>
-      <div class="calc-grid">
-        <div class="calc-inputs">
-          <div class="calc-field">
-            <label>Fleet size (vessels)</label>
-            <div class="range-row">
-              <input type="range" id="calc-fleet" min="1" max="50" value="5" step="1" />
-              <span class="range-val" id="calc-fleet-v">5</span>
-            </div>
-          </div>
-          <div class="calc-field">
-            <label>Stems per vessel per month</label>
-            <div class="range-row">
-              <input type="range" id="calc-stems" min="0.5" max="3" value="1" step="0.1" />
-              <span class="range-val" id="calc-stems-v">1.0</span>
-            </div>
-          </div>
-          <div class="calc-field">
-            <label>Average quantity per stem (MT)</label>
-            <div class="range-row">
-              <input type="range" id="calc-qty" min="50" max="1500" value="300" step="10" />
-              <span class="range-val" id="calc-qty-v">300</span>
-            </div>
-          </div>
-          <div class="calc-field">
-            <label>Assumed savings vs market ($/MT)</label>
-            <div class="range-row">
-              <input type="range" id="calc-saving" min="5" max="25" value="12" step="1" />
-              <span class="range-val" id="calc-saving-v">$12</span>
-            </div>
-          </div>
-          <div class="calc-field">
-            <label>In-house buyer cost avoided ($/month)</label>
-            <div class="range-row">
-              <input type="range" id="calc-salary" min="0" max="15000" value="8000" step="500" />
-              <span class="range-val" id="calc-salary-v">$8,000</span>
-            </div>
-          </div>
-        </div>
-        <div class="calc-output">
-          <div class="calc-line"><span class="k">Annual stems</span><span class="v" id="out-stems">60</span></div>
-          <div class="calc-line"><span class="k">Annual volume (MT)</span><span class="v" id="out-volume">18,000</span></div>
-          <div class="calc-line savings"><span class="k">Annual fuel-cost savings</span><span class="v" id="out-savings">$216,000</span></div>
-          <div class="calc-line savings"><span class="k">Buyer cost avoided / year</span><span class="v" id="out-salary">$96,000</span></div>
-          <div class="calc-line total"><span class="k">Total annual benefit</span><span class="v" id="out-total">$312,000</span></div>
-          <div class="calc-line fee"><span class="k">Our annual fee</span><span class="v" id="out-fee">$114,000</span></div>
-          <div class="calc-line net"><span class="k">Net benefit / year</span><span class="v" id="out-net">$198,000</span></div>
-        </div>
-      </div>
-      <p class="calc-disclaimer">Illustrative only. Two value drivers: fuel-cost savings (volume × $/MT vs market) and in-house buyer cost you would otherwise pay (salary + benefits + overhead). Set buyer cost to $0 if you intend to keep an existing buyer alongside us. Fee uses our published tier rates. We do not collect any data from this calculator.</p>
+  <section id="edge">
+    <div class="kicker">Your Edge</div>
+    <h2>What a trader on your side <span class="accent">actually gives you.</span></h2>
+    <p class="values-lead">We're not brokers reading a screen — we're <span class="accent">traders</span>. So you get the inside view on price, ports, quality and credit that buyers normally never see.</p>
+    <div class="values-grid">
+      <div class="value-card"><div class="vletter">01</div><h3>The real nett price</h3><p>As traders we see the supplier's true nett price — not the marked-up number a broker quotes. Every deal starts from the real floor.</p></div>
+      <div class="value-card"><div class="vletter">02</div><h3>Live port intelligence</h3><p>Congestion, disruptions and port rotations — we tell you when to book earlier or later so you're never caught out.</p></div>
+      <div class="value-card"><div class="vletter">03</div><h3>Indicative port pricing</h3><p>Know the indicative price at each port before you commit, so you can plan and benchmark with confidence.</p></div>
+      <div class="value-card"><div class="vletter">04</div><h3>Quality &amp; shortage outlook</h3><p>We know which ports run good or bad on fuel quality and short delivery — and warn you before you fix.</p></div>
+      <div class="value-card"><div class="vletter">05</div><h3>The right supplier for hard ports</h3><p>At difficult ports, we know the specific suppliers who still deliver good quality and full quantity.</p></div>
+      <div class="value-card"><div class="vletter">06</div><h3>Guaranteed-service supply</h3><p>We work with suppliers who commit to no shortage, good quality and on-time delivery — holding the slot even when your ETA shifts (on 72/48/24h notice).</p></div>
+      <div class="value-card"><div class="vletter">07</div><h3>Dispute recovery</h3><p>Quality or quantity dispute? As traders we know how these settle — and negotiate hard to get you the best return.</p></div>
+      <div class="value-card"><div class="vletter">08</div><h3>Credit access</h3><p>As traders ourselves, we know how to secure credit lines for your company — improving your cash flow.</p></div>
+      <div class="value-card"><div class="vletter">09</div><h3>Kickback-proof buying</h3><p>Outsourcing removes your in-house buyer's opportunity to take supplier kickbacks. We earn nothing from suppliers — so there's nothing to hide.</p></div>
     </div>
   </section>
 
@@ -613,7 +447,7 @@
         <div class="trust-points">
           <div class="trust-row"><div class="trust-icon">✓</div><div><h4>No supplier-side income — ever</h4><p>Flat retainer + transparent per-MT fee. No spread, no markup, no rebate.</p></div></div>
           <div class="trust-row"><div class="trust-icon">✓</div><div><h4>Every invoice shared</h4><p>Supplier invoice on every deal. Compare what you paid against any quote.</p></div></div>
-          <div class="trust-row"><div class="trust-icon">✓</div><div><h4>Monthly savings report</h4><p>Measurable savings vs market price every month. YTD tracked.</p></div></div>
+          <div class="trust-row"><div class="trust-icon">✓</div><div><h4>Monthly market report</h4><p>Every stem benchmarked against the independent market price, with full spend visibility — tracked year-to-date.</p></div></div>
         </div>
       </div>
       <div class="quote-card">
@@ -670,63 +504,6 @@
       document.getElementById('nav-links').classList.remove('open');
     }));
 
-    // ROI calculator
-    const fmt = n => '$' + Math.round(n).toLocaleString('en-US');
-    const fmtInt = n => Math.round(n).toLocaleString('en-US');
-
-    function retainerFor(fleet) {
-      if (fleet <= 3)  return 1500;
-      if (fleet <= 7)  return 3250;
-      if (fleet <= 12) return 4000;
-      if (fleet <= 20) return 6000;
-      if (fleet <= 30) return 9000;
-      return 10000 + (fleet - 30) * 300;  // $10K base + $300/vessel above 30
-    }
-    function perMtRate(monthlyVolume) {
-      return 2.50;  // flat rate
-    }
-
-    function recalc() {
-      const fleet  = +document.getElementById('calc-fleet').value;
-      const stems  = +document.getElementById('calc-stems').value;
-      const qty    = +document.getElementById('calc-qty').value;
-      const saving = +document.getElementById('calc-saving').value;
-      const salary = +document.getElementById('calc-salary').value;
-
-      document.getElementById('calc-fleet-v').textContent  = fleet;
-      document.getElementById('calc-stems-v').textContent  = stems.toFixed(1);
-      document.getElementById('calc-qty-v').textContent    = fmtInt(qty);
-      document.getElementById('calc-saving-v').textContent = '$' + saving;
-      document.getElementById('calc-salary-v').textContent = fmt(salary);
-
-      const annualStems  = fleet * stems * 12;
-      const annualVolume = annualStems * qty;
-      const monthlyVol   = annualVolume / 12;
-
-      const annualFuelSavings  = annualVolume * saving;
-      const annualSalaryAvoided = salary * 12;
-      const annualBenefit      = annualFuelSavings + annualSalaryAvoided;
-
-      const annualRetainer = retainerFor(fleet) * 12;
-      const annualStemFee  = annualStems * 500;
-      const annualMtFee    = annualVolume * perMtRate(monthlyVol);
-      const annualFee      = annualRetainer + annualStemFee + annualMtFee;
-      const net            = annualBenefit - annualFee;
-
-      document.getElementById('out-stems').textContent   = fmtInt(annualStems);
-      document.getElementById('out-volume').textContent  = fmtInt(annualVolume);
-      document.getElementById('out-savings').textContent = fmt(annualFuelSavings);
-      document.getElementById('out-salary').textContent  = fmt(annualSalaryAvoided);
-      document.getElementById('out-total').textContent   = fmt(annualBenefit);
-      document.getElementById('out-fee').textContent     = fmt(annualFee);
-      document.getElementById('out-net').textContent     = fmt(net);
-    }
-
-    ['calc-fleet','calc-stems','calc-qty','calc-saving','calc-salary'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.addEventListener('input', recalc);
-    });
-    recalc();
 
     /* ===== motion ===== */
     var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
