@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fees | Leo Candor</title>
+  <meta name="description" content="Leo Candor fees — transparent, itemised, no surprises. Monthly retainer, per-stem and flat per-MT pricing. Zero hidden revenue, no supplier commission." />
+  <link rel="canonical" href="https://leocandor.com/fees.html" />
+  <meta name="theme-color" content="#061A24" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2733'/%3E%3Cpath d='M46 20 A19 19 0 1 0 46 44' fill='none' stroke='%2300D4FF' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M27 21 L27 43 L41 43' fill='none' stroke='%23E8F4F8' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:        #061A24;
+      --bg-card:   #0B2733;
+      --bg-card-2: #102F3D;
+      --ink:       #E8F4F8;
+      --ink-soft:  #8FA9B5;
+      --ink-dim:   #5A7480;
+      --cyan:      #00D4FF;
+      --cyan-soft: #6EE2F5;
+      --amber:     #FFB547;
+      --rule:      rgba(0, 212, 255, 0.16);
+      --grid:      rgba(255, 255, 255, 0.04);
+    }
+    html { scroll-behavior: smooth; overflow-x: hidden; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--ink); -webkit-font-smoothing: antialiased; overflow-x: hidden; background-image: radial-gradient(ellipse 1200px 800px at 80% -10%, rgba(0,212,255,0.06) 0%, transparent 60%), radial-gradient(ellipse 800px 600px at -10% 40%, rgba(255,181,71,0.04) 0%, transparent 60%); background-attachment: fixed; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; background: rgba(6, 26, 36, 0.85); backdrop-filter: blur(14px); border-bottom: 1px solid var(--rule); }
+    .logo { display: flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+    .logo-text { display: flex; flex-direction: column; gap: 3px; }
+    .logo-text .brand { font-size: 16px; font-weight: 700; line-height: 1; }
+    .logo-text .strap { font-size: 9px; font-weight: 400; letter-spacing: 0; color: var(--ink-soft); line-height: 1.35; max-width: 300px; }
+    .logo-mark { width: 64px; height: 64px; background: var(--bg-card); border: 1px solid var(--rule); border-radius: 14px; display: grid; place-items: center; }
+    .logo-mark svg { width: 40px; height: 40px; display: block; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 13px; font-weight: 500; color: var(--ink-soft); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--cyan); }
+    .nav-cta { font-size: 13px; font-weight: 600; color: var(--bg); background: var(--cyan); padding: 10px 20px; text-decoration: none; border-radius: 8px; transition: all 0.2s; box-shadow: 0 0 24px rgba(0,212,255,0.25); }
+    .nav-cta:hover { background: var(--cyan-soft); box-shadow: 0 0 32px rgba(0,212,255,0.4); }
+    .nav-toggle { display: none; background: none; border: none; color: var(--cyan); cursor: pointer; font-size: 24px; }
+
+    .page-head { padding: 150px 40px 0; max-width: 1200px; margin: 0 auto; }
+    section { padding: 40px 40px 100px; max-width: 1200px; margin: 0 auto; }
+    .kicker { display: inline-flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; color: var(--cyan); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .kicker::before { content: '//'; opacity: 0.6; }
+    h1 { font-size: clamp(38px, 6vw, 64px); font-weight: 700; line-height: 1.08; letter-spacing: -0.03em; margin-bottom: 20px; max-width: 820px; }
+    h1 .accent { color: var(--cyan); }
+    .section-sub { font-size: 17px; line-height: 1.7; color: var(--ink-soft); max-width: 620px; margin-bottom: 40px; }
+
+    .fees-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .fees-card { background: var(--bg-card); border: 1px solid var(--rule); border-radius: 14px; padding: 32px; position: relative; }
+    .fees-card .label { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; }
+    .fees-card .price { font-size: 36px; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; line-height: 1; }
+    .fees-card .price .small { font-size: 18px; color: var(--ink-soft); font-weight: 500; margin-left: 4px; }
+    .fees-card .desc { font-size: 14px; color: var(--ink-soft); margin-top: 14px; line-height: 1.6; }
+    .fees-note { margin-top: 24px; padding: 20px 24px; background: rgba(0,212,255,0.06); border: 1px solid var(--rule); border-radius: 12px; font-size: 14px; line-height: 1.7; color: var(--ink); }
+    .fees-note strong { color: var(--cyan); }
+
+    .btn-primary { font-size: 14px; font-weight: 600; color: var(--bg); background: var(--cyan); padding: 16px 32px; text-decoration: none; border-radius: 10px; transition: all 0.2s; box-shadow: 0 0 32px rgba(0,212,255,0.3); display: inline-block; }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 0 40px rgba(0,212,255,0.5); }
+
+    footer { padding: 40px; background: var(--bg-card); border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 13px; color: var(--ink-dim); }
+    footer .logo { color: var(--ink); }
+    footer a { color: var(--ink-soft); text-decoration: none; transition: color 0.2s; }
+    footer a:hover { color: var(--cyan); }
+    footer .logo-mark { width: 44px; height: 44px; border-radius: 10px; }
+    footer .logo-mark svg { width: 28px; height: 28px; }
+    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    @media (max-width: 900px) {
+      nav { padding: 14px 20px; }
+      .logo-text .strap { display: none; }
+      .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); flex-direction: column; gap: 0; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+      .nav-links.open { display: flex; }
+      .nav-links a { display: block; padding: 14px 20px; }
+      .nav-toggle { display: block; }
+      .page-head { padding: 120px 20px 0; }
+      section { padding: 32px 20px 80px; }
+      .fees-grid { grid-template-columns: 1fr; }
+      footer { padding: 24px 20px; }
+    }
+    @media (max-width: 540px) {
+      h1 { font-size: clamp(30px, 9vw, 42px); }
+      .fees-card { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="index.html">
+      <div class="logo-mark"><svg viewBox="0 0 64 64" aria-label="Leo Candor"><path d="M46 20 A19 19 0 1 0 46 44" fill="none" stroke="#00D4FF" stroke-width="7" stroke-linecap="round"/><path d="M27 21 L27 43 L41 43" fill="none" stroke="#E8F4F8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="logo-text"><span class="brand">Leo Candor</span><span class="strap">A buyer can't beat a trader — the trader sees what the buyer can't. So we put a trader on your side of the table.</span></div>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="our-team.html">Our Team</a></li>
+      <li><a href="values.html">Values</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="index.html#cta">Contact us</a></li>
+    </ul>
+    <a href="https://wa.me/65XXXXXXXX?text=Hi%20Leo%20Candor%2C%20I%27d%20like%20to%20discuss%20bunker%20procurement" target="_blank" rel="noopener" class="nav-cta">WhatsApp →</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+  </nav>
+
+  <div class="page-head">
+    <div class="kicker">Fees</div>
+    <h1>Transparent. Itemised. <span class="accent">No surprises.</span></h1>
+  </div>
+
+  <section id="fees">
+    <p class="section-sub">You see exactly what you pay us — separately from what you pay the supplier. Three line items, that's it.</p>
+    <div class="fees-grid">
+      <div class="fees-card"><div class="label">Monthly Retainer</div><div class="price">$1.5K<span class="small">– $10K+</span></div><div class="desc">Scales by fleet size from 3 to 30+ vessels. $300/vessel above 30.</div></div>
+      <div class="fees-card"><div class="label">Per Stem</div><div class="price">$500<span class="small">/stem</span></div><div class="desc">Flat fee per fixed stem. Only billed when delivered.</div></div>
+      <div class="fees-card"><div class="label">Per MT (flat)</div><div class="price">$2.50<span class="small">/MT</span></div><div class="desc">Single flat rate across all monthly volumes. No tier games.</div></div>
+    </div>
+    <div class="fees-note"><strong>Zero hidden revenue.</strong> No spread. No markup. No supplier commission. No volume rebate from suppliers. Our only revenue is what's listed above — invoiced separately from your fuel cost.</div>
+    <div style="margin-top:36px;">
+      <a href="index.html#cta" class="btn-primary">Get started →</a>
+    </div>
+  </section>
+
+  <footer>
+    <a class="logo" href="index.html"><div class="logo-mark"><svg viewBox="0 0 64 64" aria-label="Leo Candor"><path d="M46 20 A19 19 0 1 0 46 44" fill="none" stroke="#00D4FF" stroke-width="7" stroke-linecap="round"/><path d="M27 21 L27 43 L41 43" fill="none" stroke="#E8F4F8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Leo Candor Pte. Ltd.</span></a>
+    <div class="footer-links"><a href="our-team.html">Our Team</a> · <a href="values.html">Values</a> · <a href="fees.html">Fees</a> · <a href="faq.html">FAQ</a></div>
+    <div><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></div>
+    <div>© 2026 Leo Candor Pte. Ltd.</div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+      document.getElementById('nav-links').classList.remove('open');
+    }));
+    (function(){
+      var nav = document.querySelector('nav');
+      window.addEventListener('scroll', function(){ nav.classList.toggle('scrolled', window.scrollY > 12); }, { passive: true });
+    })();
+  </script>
+</body>
+</html>
